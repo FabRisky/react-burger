@@ -1,0 +1,67 @@
+/* app-header.module.scss */
+
+@mixin flexCenter {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
+  
+  .headerContainer {
+    @include flexCenter;
+    padding: 18px;
+    box-sizing: border-box;
+    margin: 0 auto 20px;
+    background: #1C1C21;
+    box-shadow: 0px 24px 32px rgba(0, 0, 0, 0.04), 0px 16px 24px rgba(0, 0, 0, 0.04), 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .header_menu {
+    @include flexCenter;
+    width: 100%;
+    justify-content: center;
+    max-width: 1280px;
+  }
+  
+  .header_menu_left {
+    @include flexCenter;
+    justify-content: flex-start;
+    flex-basis: 40%;
+  }
+  
+  .header_menu_left_container {
+    @include flexCenter;
+  }
+  
+  .header_menu_icons_left__constructor_icon,
+  .header_menu_icons_left__order_icon {
+    @include flexCenter;
+    margin-right: 49px;
+    justify-content: flex-start;
+    column-gap: 9px;
+    a {
+      text-decoration: none;
+      color: #F2F2F3;
+    }
+  }
+
+  .header_menu_icons_left__order_icon {
+    margin-right: 0;
+  }
+  
+  .header_menu_icons__center_icon {
+    @include flexCenter;
+    flex-basis: 40%;
+  }
+  
+  .header_menu_icons__right_icons {
+    @include flexCenter;
+    justify-content: flex-end;
+    flex-basis: 20%;
+        span {
+            @include flexCenter;
+            column-gap: 9px; 
+        }
+  }
+  

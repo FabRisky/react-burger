@@ -29,6 +29,12 @@ function App() {
     getData();
   }, [])
 
+  useEffect(() => {
+    if(order || currentBurgerIngredient) {
+      setOpenModal(true)
+    }
+  }, [order, currentBurgerIngredient])
+
   return (
     <>
       <AppHeader/>

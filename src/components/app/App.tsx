@@ -38,13 +38,16 @@ function App() {
         items={items}
         setOrder={setOrder}
       />
-      <Modal
-        order={order}
-        setOrder={setOrder}
-        openModal={openModal}
-        setCurrentBurgerIngredient={setCurrentBurgerIngredient}
-        setOpenModal={setOpenModal}
-        currentBurgerIngredient={currentBurgerIngredient}/>
+      {
+        (order || currentBurgerIngredient)
+        && <Modal
+			    order={order}
+			    setOrder={setOrder}
+			    openModal={openModal}
+			    setCurrentBurgerIngredient={setCurrentBurgerIngredient}
+			    setOpenModal={setOpenModal}
+			    currentBurgerIngredient={currentBurgerIngredient}/>
+      }
     </>
   )
 }

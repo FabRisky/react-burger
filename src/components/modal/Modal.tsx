@@ -17,7 +17,7 @@ interface IModal {
 }
 
 const modalRoot = document.getElementById('modal');
-const ESC_KEYCODE = 27
+const ESC_KEYCODE = 27;
 
 const Modal: FC<IModal> = ({ openModal, setOpenModal, setOrder, order, currentBurgerIngredient, setCurrentBurgerIngredient }) => {
   const closeModal = useCallback(() => {
@@ -38,14 +38,6 @@ const Modal: FC<IModal> = ({ openModal, setOpenModal, setOrder, order, currentBu
       document.removeEventListener("keydown", escHandle as any);
     }
   }, [escHandle])
-
-  useEffect(() => {
-    if (currentBurgerIngredient !== null || order) {
-      setOpenModal(true);
-    } else {
-      setOpenModal(false);
-    }
-  }, [currentBurgerIngredient, order, setOpenModal])
 
   return ReactDOM.createPortal(
     openModal && (

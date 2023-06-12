@@ -1,0 +1,18 @@
+.overlay {
+    pointer-events: none;
+    z-index: 5;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    visibility: hidden;
+    right: 0;
+    background-color: rgba(0, 0, 0, .6);
+    opacity: 0;
+}
+
+.overlayOpen {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+}

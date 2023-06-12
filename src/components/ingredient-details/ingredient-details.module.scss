@@ -1,0 +1,38 @@
+@mixin flexCenter {
+    display: flex;
+    align-items: center;
+}
+
+.main_container {
+    @include flexCenter;
+    flex-direction: column;
+}
+
+.main_header {
+    @include flexCenter;
+    min-width: 640px;
+    min-height: 64px;
+}
+
+.composition {
+    display: flex;
+    column-gap: 20px;
+}
+
+.calories {
+    @include flexCenter;
+    flex-direction: column;
+    min-width: 120px;
+    row-gap: 8px;
+}
+
+.elements {
+    @include flexCenter;
+    flex-direction: column;
+    min-width: 112px;
+    row-gap: 8px;
+}
+
+.text {
+    color: #F2F2F3;
+}

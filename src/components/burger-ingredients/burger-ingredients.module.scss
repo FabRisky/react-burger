@@ -1,0 +1,19 @@
+.burger_tabs {
+    display: flex;
+    max-width: 600px;
+  }
+  
+  .category_container {
+    max-width: 600px;
+    max-height: 600px;
+    overflow-y: scroll;
+  }
+  
+  .category_list_elements {
+    list-style: none;
+    padding: 0 0 0 16px;
+    display: flex;
+    column-gap: 24px;
+    margin: 0;
+    flex-wrap: wrap;
+  }
